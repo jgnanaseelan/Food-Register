@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" ></link>
+    <title>Food Register</title>
+  </head>
+  <body>
+    <h2>Food Register</h2>
+    <div class="added hidden">
+      <button type="reset" class="close-added">&times;</button>
+      <h2>Added successfully!</h2>
+    </div>
+    <div class="container">
+    <form action="" class="food-register" method="POST">
+      <div class="row">
+        <div class="col-25">
+        <label for="name">Name</label></div>
+        <div class="col-75">
+        <input type="text" name="name" id="name" class="name" placeholder="Enter Full Name here" required/>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        <label for="adult">Adult</label></div>
+        <div class="col-75">
+        <input type="number" name="adult" class="adult" id="adult" value="1" required /></div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        <label for="child">Child</label></div>
+        <div class="col-75">
+        <input type="number" name="child" class="child" id="child" value="0" required /></div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        <label for="date">Date</label></div>
+        <div class="col-75">
+        <input type="date" name="date" id="date" class="date" required/></div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        <label for="remark">Remarks</label></div>
+        <div class="col-75">
+        <textarea name="remark" style="height: 100px;" class="remark" placeholder="Remarks here" required></textarea></div>
+      </div><br>
+      <div class="row">
+        <input type="submit" class="submit"></input>
+        <input type="reset" class="reset"></input>
+      </div>
+    </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
