@@ -37,6 +37,6 @@ app.post('/', async (req, res) => {
       values: [[name, adult, child, date, remark]],
     },
   });
-  res.status(204).send();
+  res.send('Sucssfully Submited! Thank you!');
 });
 app.listen(1337, (req, res) => console.log('running on 1337'));
